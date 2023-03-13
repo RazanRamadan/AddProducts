@@ -1,0 +1,16 @@
+body{
+    font-weight: bold;
+}
+
+.card{
+    padding: 20px;
+}
+
+.form-group{
+    margin: 10px 0px;
+
+}
+
+.none{
+    display: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="js5.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    
+
+    <h1 class="text-center text-info my-2">OUR PRODUCTS </h1>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <input type="text" id="title" placeholder="Title" class="form-control">
+            </div>
+        </div>
+        <div class="row" id="cost">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="number" id="price"  placeholder="Price" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="number" id="tax"  placeholder="Taxes" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="number" id="Tcost"  placeholder="TransferCost" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="number" id="discound"  placeholder="Discound" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="number" id="total" readonly placeholder="Total" class="form-control">
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="count" placeholder="Count" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <input type="text" id="department" placeholder="Department" class="form-control">
+        </div>
+
+        <div class="d-grid">
+            <button class="btn btn-info" id="btnCreate">Create</button>
+        </div>
+
+    </div>
+</div>
+
+
+<h1 class="text-center text-info my-4">OUR PRODUCTS </h1>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+<div class="d-grid my-2"> 
+    <button id="deleteAllBtn" claas="btn btn-danger" class="none">Delete All <span id="spanDeleteBtn"></span> </button>
+    </div>
+<table class="table table">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Taxes</th>
+        <th>Transfer Cost</th>
+        <th>Discoun</th>
+        <th>Total</th>
+        <th>Department</th>
+        <th colspan="2">Action</th>
+        <th>Date</th>
+    </tr>
+    <tbody id="tableBody"> 
+   
+    </tbody>
+</table>
+
+        </div>
+    </div>
+</div>
+
+
+<script type="module" src="./js/bundle.js"> </script>
+  <!--  <script type="module" src="./js5.js"> </script> -->
+  <script type="text/javascript" src="js5.js" defer> </script>
+
+</body>
+
+</html>
